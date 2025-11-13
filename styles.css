@@ -73,12 +73,6 @@ nav a{
   position:relative;
   padding-bottom:2px;
 }
-nav a:hover{
-  color:#000000;           /* keep black on hover too */
-}
-nav a:hover::after{
-  width:100%;
-}
 nav a::after{
   content:"";
   position:absolute;
