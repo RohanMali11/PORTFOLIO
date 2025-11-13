@@ -4,7 +4,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
- background: #CF5C36;
+ background: #D96846;
  color: #2F3020;
   line-height:1.6;
 a{color:var(--accent);text-decoration:none;transition:.2s}
