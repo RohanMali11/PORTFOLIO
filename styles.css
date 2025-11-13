@@ -342,3 +342,8 @@ footer{
   gap:10px;
   margin-top:12px;
 }
+/* Force the main intro paragraph to pure black */
+.lead {
+  color: #000000 !important;
+}
+
