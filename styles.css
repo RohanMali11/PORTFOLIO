@@ -7,8 +7,8 @@
   --accent-alt: #596235; /* green accent */
   --accent-dark: #2F3020; /* very dark text/lines */
   --border: #CDCBD6;
-  --text: #2F3020;
-  --muted: #756F65;
+  --text: #FFFFFF;
+  --muted: #F2F2F2;
   --radius: 18px;
   --shadow: 0 18px 45px rgba(47,48,32,0.16);
 }
