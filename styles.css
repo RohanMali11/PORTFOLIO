@@ -365,6 +365,16 @@ footer{
   background: #F3F3F3 !important;
   border-color: #CDCBD6 !important;
 }
+/* Make top navigation text pure black */
+header nav a {
+  color: #000000 !important;
+}
+
+/* Also make the logo text black */
+header .logo {
+  color: #000000 !important;
+}
+
 
 
 
