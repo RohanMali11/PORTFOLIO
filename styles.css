@@ -69,9 +69,15 @@ nav{
   flex-wrap:wrap;
 }
 nav a{
-  color:var(--muted);
+  color:#000000;           /* PURE BLACK */
   position:relative;
   padding-bottom:2px;
+}
+nav a:hover{
+  color:#000000;           /* keep black on hover too */
+}
+nav a:hover::after{
+  width:100%;
 }
 nav a::after{
   content:"";
