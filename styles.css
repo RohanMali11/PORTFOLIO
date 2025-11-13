@@ -4,8 +4,8 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background: linear-gradient(135deg, #ff7a18, #af002d 70%, #319197);
-  color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+  background: linear-gradient(135deg, #fef9d7 0%, #e3f0ff 100%);
+color: #111;
 a{color:var(--accent);text-decoration:none;transition:.2s}
 a:hover{color:#7dd3fc}
 .container{max-width:1120px;margin:0 auto;padding:28px 16px 76px}
