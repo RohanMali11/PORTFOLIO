@@ -353,5 +353,18 @@ footer{
   color: #000000 !important;
   font-weight: 500;
 }
+/* Make the "View Featured Projects" button look like the white one */
+.hero-actions .btn.primary{
+  background: #FFFFFF !important;        /* white like the other button */
+  border-color: #CDCBD6 !important;      /* soft border */
+  color: #2F3020 !important;             /* dark text */
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12) !important;
+}
+
+.hero-actions .btn.primary:hover{
+  background: #F3F3F3 !important;
+  border-color: #CDCBD6 !important;
+}
+
 
 
