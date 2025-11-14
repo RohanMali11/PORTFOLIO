@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Radial Engine | Rohan Mali</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Same header as your other pages -->
+    <header>
+      <div class="logo">ROHAN MALI</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="assemblies.html">Assemblies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION FOR RADIAL ENGINE -->
+    <section class="section hero radial-hero-section">
+      <div class="hero-left">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>SolidWorks Assembly & Motion Study</span>
+        </div>
+
+        <h1>Radial Engine</h1>
+        <p class="subtitle">Multi-cylinder engine assembly modelled and animated in SolidWorks.</p>
+
+        <p class="lead">
+          This radial engine project focuses on building a complete multi-cylinder assembly,
+          applying correct mates and then driving a motion study to visualise piston and
+          crank kinematics. It is designed and modelled entirely in SolidWorks.
+        </p>
+
+        <ul class="project-meta">
+          <li><strong>Tool:</strong> SolidWorks</li>
+          <li><strong>Type:</strong> Assembly &amp; Motion Study</li>
+          <li><strong>Role:</strong> Individual project</li>
+          <li><strong>Focus:</strong> Mechanisms, mates, motion visualisation</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-image-panel">
+          <img src="radial-engine-hero.jpg" alt="Radial engine SolidWorks assembly hero view">
+        </div>
+      </div>
+    </section>
+
+    <!-- Later we will add: gallery, motion, process, skills, etc. -->
+
+    <footer>
+      <span>© <span id="year"></span> Rohan Mali</span>
+      <span>SolidWorks &amp; Design Projects Portfolio</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
