@@ -63,6 +63,8 @@ a:hover{
   max-width:1120px;
   margin:0 auto;
   padding:28px 16px 76px;
+    background: transparent;
+
 }
 .lead {
   font-size: 18px;
