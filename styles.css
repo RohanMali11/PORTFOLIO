@@ -484,6 +484,17 @@ header .logo {
   color:#2F3020;
   max-width:720px;
 }
+/* Medium-width centered video */
+.motion-frame.medium {
+  max-width: 750px;      /* adjust size if you want */
+  margin: 0 auto;        /* center horizontally */
+}
+
+.motion-frame.medium video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
 
 
 
