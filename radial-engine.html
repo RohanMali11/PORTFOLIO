@@ -6,6 +6,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("radialVideo");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video.play();     // plays when in view
+      } else {
+        video.pause();    // pauses when out of view
+      }
+    });
+  }, { threshold: 0.45 });   // 45% of video must be on screen
+
+  observer.observe(video);
+});
+</script>
+
 <body>
   <div class="container">
     <!-- Same header as your other pages -->
