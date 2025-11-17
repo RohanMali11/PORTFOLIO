@@ -559,3 +559,12 @@ footer{
   height: auto;
   border-radius: 12px;
 }
+/* Dark grey text for radial engine descriptions + captions */
+.radial-gallery .gallery-item,
+.radial-gallery .gallery-item p,
+.radial-gallery .gallery-item .title,
+.radial-motion .motion-caption {
+  color:#1A1A1A !important;
+  font-weight:500;
+}
+
