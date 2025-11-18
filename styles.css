@@ -429,13 +429,27 @@ footer{
   align-items: center;
 }
 
-/* On radial hero, give more space to the image column on large screens */
+/* Radial hero – Apple-style layout */
 @media (min-width: 880px){
   .radial-hero-section.hero{
-    grid-template-columns: 5fr 7fr; /* text : image */
+    display: grid;
+    grid-template-columns: 5fr 7fr;   /* left text, right image */
+    gap: 48px;
+    align-items: flex-start;          /* align both from the TOP */
+    padding: 32px 0 56px;
   }
 }
+/* Limit text width for clean Apple-style layout */
+.radial-hero-section.hero > div:first-child {
+  max-width: 640px;
+}
 
+/* Improve readability of introduction paragraphs */
+.radial-hero-section.hero .lead {
+  margin-top: 16px;
+  font-size: 17px;
+  line-height: 1.7;
+}
 /* Panel around the hero image */
 .hero-image-panel{
   background:#FFFFFF;
