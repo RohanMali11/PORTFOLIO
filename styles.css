@@ -581,4 +581,38 @@ footer{
   color:#1A1A1A !important;
   font-weight:500;
 }
+/* Radial engine – single-column overview with one image */
+.radial-overview{
+  max-width: 900px;
+  margin: 0 auto 56px;
+}
+
+.radial-overview h1{
+  margin-bottom: 16px;
+}
+
+.radial-overview .lead{
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* Center the hero image nicely */
+.radial-overview-image{
+  margin: 26px 0 22px;
+}
+
+.radial-overview-image img{
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Project summary under the image */
+.radial-overview .project-summary-title{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
 
