@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bench Vice – SolidWorks Assembly & Motion Study | Rohan Mali</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- HEADER -->
+  <header>
+    <div class="logo">ROHAN MALI</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="assemblies.html">Assemblies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- OVERVIEW (like radial, single column + one hero image) -->
+  <section class="section bench-overview">
+    <span class="badge">
+      <span class="badge-dot"></span>
+      SolidWorks Assembly &amp; Motion Study
+    </span>
+
+    <h1>Bench Vice</h1>
+
+    <p class="lead">
+      A bench vice is a work-holding device used to clamp components securely during cutting, drilling,
+      filing or assembly operations. The fixed and moving jaws provide a large, flat gripping area while
+      the leadscrew and handle convert hand torque into reliable clamping force.
+    </p>
+
+    <p class="lead">
+      This design uses a robust cast-style body, replaceable serrated jaw plates and a protected
+      sliding mechanism so that the vice can withstand repeated tightening without damaging the workpiece
+      or the screw.
+    </p>
+
+    <!-- ONE main hero image -->
+    <div class="hero-image-panel bench-overview-image">
+      <img src="bench-hero.jpg" alt="Bench vice assembly render">
+    </div>
+
+    <!-- Project summary -->
+    <p class="project-summary-title">
+      Work-holding vice assembly modelled, detailed and animated in SolidWorks.
+    </p>
+
+    <p class="lead">
+      This bench vice project focuses on building a fully constrained assembly, applying correct mates for
+      the sliding jaw and leadscrew, generating exploded and section views, and detailing the jaw serrations
+      with GD&amp;T. The assembly was modelled, documented and animated entirely in SolidWorks.
+    </p>
+
+    <ul class="project-meta">
+      <li><strong>Tool:</strong> SolidWorks</li>
+      <li><strong>Type:</strong> Assembly, Detail Drawing &amp; Motion Study</li>
+      <li><strong>Role:</strong> Individual project</li>
+      <li><strong>Focus:</strong> Mates, exploded views, sectioning, serration detail &amp; motion visualisation</li>
+    </ul>
+  </section>
+
+  <!-- GALLERY: exploded, section, serration detail -->
+  <section class="section bench-gallery">
+    <h2>Key Views &amp; Detailing</h2>
+    <div class="divider"></div>
+
+    <div class="gallery-grid">
+      <!-- Exploded view -->
+      <article class="gallery-item">
+        <div class="gallery-frame">
+          <img src="bench-exploded.jpg" alt="Bench vice exploded assembly view">
+        </div>
+        <h3>Exploded Assembly View</h3>
+        <p class="gallery-text">
+          Exploded configuration showing the vice body, fixed and sliding jaws, leadscrew, handle,
+          fasteners and jaw plates. This view communicates how each component locates and assembles
+          onto the base.
+        </p>
+      </article>
+
+      <!-- Section view through screw and guides -->
+      <article class="gallery-item">
+        <div class="gallery-frame">
+          <img src="bench-section.jpg" alt="Bench vice section view through screw and sliding jaw">
+        </div>
+        <h3>Section Through Sliding Mechanism</h3>
+        <p class="gallery-text">
+          Sectioned view cutting through the sliding jaw, screw and nut housing. It highlights the
+          guide slot, constraint features and clearances that allow smooth motion while keeping the
+          jaw aligned under load.
+        </p>
+      </article>
+
+      <!-- Detail view of serrations -->
+      <article class="gallery-item gallery-item-wide">
+        <div class="gallery-frame">
+          <img src="bench-detail.jpg" alt="Detail view of serrated jaw profile with dimensions">
+        </div>
+        <h3>Detail – Jaw Serrations &amp; GD&amp;T</h3>
+        <p class="gallery-text">
+          Detail A of the jaw screw serrations, scaled 5:1, showing 2&nbsp;mm pitch, 60&deg; tooth angle
+          and 1.08&nbsp;mm depth. A parallelism tolerance of 0.05&nbsp;mm relative to datum A controls
+          orientation of the gripping profile, demonstrating application of GD&amp;T to functional
+          contact surfaces.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MOTION STUDY -->
+  <section class="section bench-motion">
+    <h2>Motion Study – Jaw Reciprocation</h2>
+    <div class="divider"></div>
+
+    <p class="motion-intro">
+      Reciprocating motion study showing the sliding jaw opening and closing using the leadscrew and
+      handle, with correct mates and travel limits applied to the mechanism.
+    </p>
+
+    <div class="motion-frame medium">
+      <video
+        src="bench-motion.mp4"
+        muted
+        loop
+        playsinline
+        data-autoplay-on-visible
+      ></video>
+      <p class="motion-caption">
+        The vice is driven using a rotary input on the handle, transferring motion through the screw
+        to generate linear travel of the moving jaw. The study validates mate selection, clearances
+        and end-stop positions for the full clamping range.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>&copy; Rohan Mali &mdash; SolidWorks Assemblies &amp; Motion Studies</span>
+    <span>Bench Vice | Portfolio</span>
+  </footer>
+</div>
+
+<!-- Autoplay video only when in view -->
+<script>
+  const autoplayVideos = document.querySelectorAll('[data-autoplay-on-visible]');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          if (video.paused) video.play().catch(() => {});
+        } else {
+          if (!video.paused) video.pause();
+        }
+      });
+    }, { threshold: 0.4 });
+
+    autoplayVideos.forEach(v => observer.observe(v));
+  } else {
+    // Fallback: just play
+    autoplayVideos.forEach(v => v.play().catch(() => {}));
+  }
+</script>
+
+</body>
+</html>
