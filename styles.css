@@ -614,5 +614,37 @@ footer{
   font-weight: 600;
   margin-bottom: 8px;
 }
+/* Bench vice overview */
+.bench-overview{
+  max-width: 900px;
+  margin: 0 auto 56px;
+}
+
+.bench-overview h1{
+  margin-bottom: 16px;
+}
+
+.bench-overview .lead{
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* Center the bench hero image nicely */
+.bench-overview-image{
+  margin: 24px 0 22px;
+}
+
+/* Bench gallery & motion headings */
+.bench-gallery h2,
+.bench-motion h2{
+  color: #000000;
+}
+
+/* Optional: text sizing in gallery */
+.bench-gallery .gallery-text{
+  font-size: 14px;
+  line-height: 1.6;
+}
 
 
