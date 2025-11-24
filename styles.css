@@ -647,5 +647,38 @@ footer{
   line-height: 1.65;
   color: #2F3020;
 }
+/* Adjustable wrench overview layout */
+.wrench-overview{
+  max-width: 900px;
+  margin: 0 auto 56px;
+}
+
+.wrench-overview h1{
+  margin-bottom: 16px;
+}
+
+.wrench-overview .lead{
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* Hero image spacing */
+.wrench-hero-image{
+  margin: 24px 0 22px;
+}
+
+/* Section titles for this page */
+.wrench-gallery h2,
+.wrench-motion h2{
+  color: #000000;
+}
+
+/* Caption size for wrench gallery */
+.wrench-gallery .gallery-text{
+  font-size: 16px;
+  line-height: 1.65;
+  color: #2F3020;
+}
 
 
