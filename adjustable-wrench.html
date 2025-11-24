@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adjustable Wrench – SolidWorks Assembly & Motion Study | Rohan Mali</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="container">
+  <!-- HEADER -->
+  <header>
+    <div class="logo">ROHAN MALI</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="assemblies.html">Assemblies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- OVERVIEW -->
+  <section class="section wrench-overview">
+    <span class="badge">
+      <span class="badge-dot"></span>
+      SolidWorks Assembly &amp; Motion Study
+    </span>
+
+    <h1>Adjustable Wrench</h1>
+
+    <p class="lead">
+      An adjustable wrench is a common hand tool used to grip and tighten different sizes of nuts and bolts. 
+      A sliding jaw driven by a worm screw allows the opening to be adjusted, so the same tool can be used on a 
+      range of fastener sizes.
+    </p>
+
+    <p class="lead">
+      In this model the handle, fixed jaw, sliding jaw and worm screw are designed to reflect a real manufactured 
+      wrench, with clearance for smooth motion and tooth geometry that engages reliably under load.
+    </p>
+
+    <!-- HERO IMAGE -->
+    <div class="hero-image-panel wrench-hero-image">
+      <img src="wrench-hero.jpg" alt="Adjustable wrench assembly render">
+    </div>
+
+    <!-- PROJECT SUMMARY -->
+    <p class="project-summary-title">
+      Adjustable wrench assembly modelled, detailed and animated in SolidWorks.
+    </p>
+
+    <p class="lead">
+      This project focuses on building a fully constrained wrench mechanism, setting up mates for the sliding jaw 
+      and worm screw, and documenting the design through drawing views and a short motion study. The assembly was 
+      created and validated entirely in SolidWorks.
+    </p>
+
+    <ul class="project-meta">
+      <li><strong>Tool:</strong> SolidWorks</li>
+      <li><strong>Type:</strong> Assembly, Detail Drawing &amp; Motion Study</li>
+      <li><strong>Role:</strong> Individual project</li>
+      <li><strong>Focus:</strong> Mechanism layout, exploded views, internal sectioning and jaw tooth detailing</li>
+    </ul>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section wrench-gallery">
+    <h2>Key Views &amp; Mechanism Detail</h2>
+    <div class="divider"></div>
+
+    <div class="gallery-grid">
+      <!-- Exploded view -->
+      <article class="gallery-item">
+        <div class="gallery-frame">
+          <img src="wrench-exploded.jpg" alt="Exploded view of adjustable wrench assembly">
+        </div>
+        <h3>Exploded Assembly View</h3>
+        <p class="gallery-text">
+          Exploded configuration showing the handle, fixed jaw, sliding jaw, worm screw and rack insert. 
+          The view makes the assembly sequence and the way each part locates into the wrench head easy to understand.
+        </p>
+      </article>
+
+      <!-- Section / internal view -->
+      <article class="gallery-item">
+        <div class="gallery-frame">
+          <img src="wrench-section.jpg" alt="Internal view of worm screw and sliding jaw engagement">
+        </div>
+        <h3>Internal View of Adjustment Mechanism</h3>
+        <p class="gallery-text">
+          Sectioned view through the wrench head focusing on the worm screw and sliding jaw engagement. 
+          It shows how the rack teeth, screw profile and side guides interact to control jaw position while 
+          maintaining alignment under tightening loads.
+        </p>
+      </article>
+
+      <!-- Detail view with teeth -->
+      <article class="gallery-item gallery-item-wide">
+        <div class="gallery-frame">
+          <img src="wrench-detail.jpg" alt="Detail view of jaw rack teeth from drawing">
+        </div>
+        <h3>Detail – Jaw Rack Teeth</h3>
+        <p class="gallery-text">
+          Detail B of the jaw rack teeth from the drawing, scaled 2:1. Dimensioning the tooth spacing, profile and 
+          radii demonstrates control of the sliding interface that allows the jaw to move smoothly yet resist 
+          backlash when torque is applied to the handle.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MOTION STUDY -->
+  <section class="section wrench-motion">
+    <h2>Motion Study – Jaw Adjustment</h2>
+    <div class="divider"></div>
+
+    <p class="motion-intro">
+      Motion study showing the sliding jaw opening and closing through the worm screw rotation, with mates and 
+      travel limits applied to represent the functional range of the wrench.
+    </p>
+
+    <div class="motion-frame medium">
+      <video
+        src="wrench-motion.mp4"
+        muted
+        loop
+        playsinline
+        data-autoplay-on-visible
+      ></video>
+      <p class="motion-caption">
+        The worm screw is driven through a rotary input while the sliding jaw is constrained using appropriate 
+        mates in the slot. The animation visualises the adjustment mechanism and checks clearances at the fully 
+        open and fully closed settings.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>&copy; Rohan Mali &mdash; SolidWorks Assemblies &amp; Motion Studies</span>
+    <span>Adjustable Wrench | Portfolio</span>
+  </footer>
+</div>
+
+<!-- Autoplay motion only when visible -->
+<script>
+  const autoplayVideos = document.querySelectorAll('[data-autoplay-on-visible]');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          if (video.paused) video.play().catch(() => {});
+        } else {
+          if (!video.paused) video.pause();
+        }
+      });
+    }, { threshold: 0.4 });
+
+    autoplayVideos.forEach(v => observer.observe(v));
+  } else {
+    autoplayVideos.forEach(v => v.play().catch(() => {}));
+  }
+</script>
+
+</body>
+</html>
