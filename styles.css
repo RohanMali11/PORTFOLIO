@@ -680,5 +680,15 @@ footer{
   line-height: 1.65;
   color: #2F3020;
 }
+/* FIX HERO IMAGE SIZE FOR WRENCH PAGE */
+.wrench-hero-image img{
+    max-width: 480px;     /* keep it crisp */
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.wrench-hero-image{
+    text-align: center;
+}
 
 
