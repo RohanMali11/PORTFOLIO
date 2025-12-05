@@ -140,6 +140,103 @@
     <span>&copy; Rohan Mali &mdash; SolidWorks Assemblies &amp; Motion Studies</span>
     <span>Adjustable Wrench | Portfolio</span>
   </footer>
+  <section id="wrench-fea" class="section wrench-fea">
+  <div class="container">
+
+    <div class="kicker">Finite Element Analysis</div>
+    <h2>Static Structural Analysis – Adjustable Wrench Jaw</h2>
+
+    <p class="lead">
+      A static structural study was carried out on the moving jaw of the adjustable wrench to
+      understand how it behaves under a hand-tightening load. The jaw is modelled in ANSYS using
+      the default <strong>Structural Steel</strong> material and a <strong>100&nbsp;N</strong> lateral
+      force applied on the gripping face.
+    </p>
+
+    <!-- SUMMARY GRID -->
+    <div class="fea-summary grid two">
+      <div class="fea-card">
+        <h3>Boundary Conditions</h3>
+        <ul>
+          <li><strong>Fixed support</strong> at the lower pivot / mounting region.</li>
+          <li><strong>Force:</strong> 100&nbsp;N applied on the inner jaw surface
+              in the closing direction.</li>
+          <li><strong>Material:</strong> Structural Steel (ANSYS library).</li>
+          <li><strong>Units:</strong> MPa for stress, mm for deformation.</li>
+        </ul>
+      </div>
+
+      <div class="fea-card">
+        <h3>Key Results</h3>
+        <ul>
+          <li><strong>Max von-Mises stress:</strong> ≈ <strong>322&nbsp;MPa</strong>
+              at the jaw fillet.</li>
+          <li><strong>Max total deformation:</strong> ≈ <strong>0.012&nbsp;mm</strong>
+              at the jaw tip.</li>
+          <li><strong>Trend:</strong> Stress concentrated where the jaw changes section,
+              with smooth bending towards the loaded tip.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FIGURES -->
+    <div class="fea-grid">
+      <!-- Mesh -->
+      <figure class="fea-figure">
+        <img src="images/wrench-fea/01_Mesh_FullView.png"
+             alt="Finite element mesh of the adjustable wrench jaw">
+        <figcaption>
+          <strong>Figure 1 – Finite element mesh.</strong>
+          Tetrahedral elements refined around the fillet and tooth region to capture
+          stress concentrations while keeping the model efficient.
+        </figcaption>
+      </figure>
+
+      <!-- Von Mises Stress -->
+      <figure class="fea-figure">
+        <img src="images/wrench-fea/02_Stress_vonMises_FullView.png"
+             alt="Von Mises equivalent stress plot of the wrench jaw under load">
+        <figcaption>
+          <strong>Figure 2 – Equivalent (von-Mises) stress distribution.</strong>
+          Maximum stress of about <strong>322&nbsp;MPa</strong> appears at the fillet where
+          the jaw joins the body. This matches the expected critical region in bending.
+        </figcaption>
+      </figure>
+
+      <!-- Total Deformation -->
+      <figure class="fea-figure">
+        <img src="images/wrench-fea/03_TotalDeformation_FullView.png"
+             alt="Total deformation plot of the wrench jaw under load">
+        <figcaption>
+          <strong>Figure 3 – Total deformation.</strong>
+          The jaw deflects by only <strong>≈ 0.012&nbsp;mm</strong>, with the largest
+          movement at the tip and almost zero displacement at the fixed pivot.
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- INTERPRETATION -->
+    <div class="fea-interpretation">
+      <h3>Design Interpretation</h3>
+      <p>
+        The analysis shows that the jaw behaves as a stiff cantilever, with deformation well
+        below a tenth of a millimetre for a 100&nbsp;N hand-tightening load. The von-Mises
+        stress concentrates at the fillet, which is typical for this type of geometry. In a
+        production design, this result would be used to either:
+      </p>
+      <ul>
+        <li>Choose a higher-strength tool steel for the jaw, or</li>
+        <li>Increase fillet radii / cross-section thickness to reduce the peak stress.</li>
+      </ul>
+      <p>
+        This FEA study demonstrates my workflow for setting up boundary conditions, generating
+        an appropriate mesh and turning raw results into design decisions.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 </div>
 
 <!-- Autoplay motion only when visible -->
