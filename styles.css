@@ -698,5 +698,100 @@ footer{
   display: block;
   margin: 0 auto;
 }
+/* ========= ADJUSTABLE WRENCH – FEA SECTION ========= */
+
+.wrench-fea h2 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.wrench-fea .fea-summary {
+  margin-top: 18px;
+  margin-bottom: 26px;
+}
+
+.fea-card {
+  background: #FFFFFF;
+  border-radius: 18px;
+  border: 1px solid #CDCBD6;
+  padding: 14px 16px 16px;
+  box-shadow: 0 16px 40px rgba(47,48,32,0.16);
+  font-size: 14px;
+  color: #2F3020;
+}
+
+.fea-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.fea-card ul {
+  padding-left: 18px;
+}
+
+.fea-card li + li {
+  margin-top: 4px;
+}
+
+/* Figures grid */
+
+.fea-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+@media (min-width: 880px) {
+  .fea-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.fea-figure {
+  background: #FFFFFF;
+  border-radius: 18px;
+  border: 1px solid #CDCBD6;
+  padding: 10px;
+  box-shadow: 0 16px 40px rgba(47,48,32,0.16);
+  font-size: 13px;
+  color: #2F3020;
+}
+
+.fea-figure img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.fea-figure figcaption strong {
+  font-weight: 600;
+}
+
+/* Interpretation block */
+
+.fea-interpretation {
+  margin-top: 26px;
+  background: #FFFFFF;
+  border-radius: 18px;
+  border: 1px solid #CDCBD6;
+  padding: 16px 18px 18px;
+  box-shadow: 0 16px 40px rgba(47,48,32,0.16);
+  font-size: 14px;
+  color: #2F3020;
+}
+
+.fea-interpretation h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.fea-interpretation ul {
+  padding-left: 20px;
+}
+
+.fea-interpretation li + li {
+  margin-top: 4px;
+}
 
 
