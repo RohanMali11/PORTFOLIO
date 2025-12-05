@@ -701,18 +701,19 @@ footer{
 /* ========= ADJUSTABLE WRENCH – FEA SECTION ========= */
 
 .fea-label {
-    font-size: 1.6rem;
+    color: #000000;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
 }
 .wrench-fea h2 {
   color: #000000;
-  font-size: 2rem;       /* increase title size */
+  font-size: 1.6rem;       /* increase title size */
   font-weight: 700;      /* bold */
-  letter-spacing: 1px;   /* cleaner look */
+  letter-spacing: 2px;   /* cleaner look */
   margin-top: 3rem;
   text-transform: uppercase;
   margin-bottom: 10px;
