@@ -702,6 +702,11 @@ footer{
 
 .wrench-fea h2 {
   color: #000000;
+  font-size: 2rem;       /* increase title size */
+  font-weight: 700;      /* bold */
+  letter-spacing: 1px;   /* cleaner look */
+  margin-top: 3rem;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
