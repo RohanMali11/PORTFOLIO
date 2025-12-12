@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bench Vice – SolidWorks Assembly & Motion Study | Rohan Mali</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="container">
+
   <!-- HEADER -->
   <header>
     <div class="logo">ROHAN MALI</div>
@@ -19,7 +21,7 @@
     </nav>
   </header>
 
-  <!-- OVERVIEW (like radial, single column + one hero image) -->
+  <!-- OVERVIEW -->
   <section class="section bench-overview">
     <span class="badge">
       <span class="badge-dot"></span>
@@ -40,12 +42,11 @@
       or the screw.
     </p>
 
-    <!-- ONE main hero image -->
+    <!-- HERO IMAGE -->
     <div class="hero-image-panel bench-overview-image">
       <img src="bench-hero.jpg" alt="Bench vice assembly render">
     </div>
 
-    <!-- Project summary -->
     <p class="project-summary-title">
       Work-holding vice assembly modelled, detailed and animated in SolidWorks.
     </p>
@@ -64,46 +65,43 @@
     </ul>
   </section>
 
-  <!-- GALLERY: exploded, section, serration detail -->
+  <!-- GALLERY -->
   <section class="section bench-gallery">
     <h2>Key Views &amp; Detailing</h2>
     <div class="divider"></div>
 
     <div class="gallery-grid">
-      <!-- Exploded view -->
       <article class="gallery-item">
         <div class="gallery-frame">
           <img src="bench-exploded.jpg" alt="Bench vice exploded assembly view">
         </div>
-        <h3>Exploded Assembly View</h3>
-        <p class="gallery-text">
+        <p class="motion-caption">
+          <strong>Exploded Assembly View.</strong>
           Exploded configuration showing the vice body, fixed and sliding jaws, leadscrew, handle,
           fasteners and jaw plates. This view communicates how each component locates and assembles
           onto the base.
         </p>
       </article>
 
-      <!-- Section view through screw and guides -->
       <article class="gallery-item">
         <div class="gallery-frame">
           <img src="bench-section.jpg" alt="Bench vice section view through screw and sliding jaw">
         </div>
-        <h3>Section Through Sliding Mechanism</h3>
-        <p class="gallery-text">
+        <p class="motion-caption">
+          <strong>Section Through Sliding Mechanism.</strong>
           Sectioned view cutting through the sliding jaw, screw and nut housing. It highlights the
           guide slot, constraint features and clearances that allow smooth motion while keeping the
           jaw aligned under load.
         </p>
       </article>
 
-      <!-- Detail view of serrations -->
       <article class="gallery-item gallery-item-wide">
         <div class="gallery-frame">
           <img src="bench-detail.jpg" alt="Detail view of serrated jaw profile with dimensions">
         </div>
-        <h3>Detail – Jaw Serrations &amp; GD&amp;T</h3>
-        <p class="gallery-text">
-          Detail A of the jaw screw serrations, scaled 5:1, showing 2&nbsp;mm pitch, 60&deg; tooth angle
+        <p class="motion-caption">
+          <strong>Detail – Jaw Serrations &amp; GD&amp;T.</strong>
+          Detail A of the jaw serrations, scaled 5:1, showing 2&nbsp;mm pitch, 60&deg; tooth angle
           and 1.08&nbsp;mm depth. A parallelism tolerance of 0.05&nbsp;mm relative to datum A controls
           orientation of the gripping profile, demonstrating application of GD&amp;T to functional
           contact surfaces.
@@ -112,14 +110,14 @@
     </div>
   </section>
 
-  <!-- MOTION STUDY -->
+  <!-- MOTION -->
   <section class="section bench-motion">
     <h2>Motion Study – Jaw Reciprocation</h2>
     <div class="divider"></div>
 
-    <p class="motion-intro">
+    <p class="motion-caption">
       Reciprocating motion study showing the sliding jaw opening and closing using the leadscrew and
-      handle, with correct mates and travel limits applied to the mechanism.
+      handle, with mates and travel limits applied to represent the functional clamping range.
     </p>
 
     <div class="motion-frame medium">
@@ -130,6 +128,7 @@
         playsinline
         data-autoplay-on-visible
       ></video>
+
       <p class="motion-caption">
         The vice is driven using a rotary input on the handle, transferring motion through the screw
         to generate linear travel of the moving jaw. The study validates mate selection, clearances
@@ -143,6 +142,7 @@
     <span>&copy; Rohan Mali &mdash; SolidWorks Assemblies &amp; Motion Studies</span>
     <span>Bench Vice | Portfolio</span>
   </footer>
+
 </div>
 
 <!-- Autoplay video only when in view -->
@@ -162,7 +162,6 @@
 
     autoplayVideos.forEach(v => observer.observe(v));
   } else {
-    // Fallback: just play
     autoplayVideos.forEach(v => v.play().catch(() => {}));
   }
 </script>
