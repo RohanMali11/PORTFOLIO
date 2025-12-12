@@ -597,3 +597,19 @@ footer{
   gap:10px;
   margin-top:12px;
 }
+/* FORCE PROJECT PAGES TO FOLLOW THE SAME CENTERED FLOW */
+.radial-overview,
+.bench-overview,
+.wrench-overview,
+.radial-gallery,
+.bench-gallery,
+.wrench-gallery,
+.radial-motion,
+.bench-motion,
+.wrench-motion,
+.wrench-fea{
+  max-width: 900px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
