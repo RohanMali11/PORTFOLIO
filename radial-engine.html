@@ -6,27 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
-  <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const video = document.getElementById("radialVideo");
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        video.play();     // plays when in view
-      } else {
-        video.pause();    // pauses when out of view
-      }
-    });
-  }, { threshold: 0.45 });   // 45% of video must be on screen
-
-  observer.observe(video);
-});
-</script>
 
 <body>
   <div class="container">
-    <!-- Same header as your other pages -->
+
+    <!-- HEADER -->
     <header>
       <div class="logo">ROHAN MALI</div>
       <nav>
@@ -37,65 +21,62 @@ document.addEventListener("DOMContentLoaded", () => {
       </nav>
     </header>
 
-    <!-- HERO SECTION FOR RADIAL ENGINE -->
+    <!-- OVERVIEW -->
     <section class="section radial-overview">
-  <span class="badge">
-    <span class="badge-dot"></span>
-    SolidWorks Assembly &amp; Motion Study
-  </span>
+      <span class="badge">
+        <span class="badge-dot"></span>
+        SolidWorks Assembly &amp; Motion Study
+      </span>
 
-  <h1>Radial Engine</h1>
+      <h1>Radial Engine</h1>
 
-  <!-- 3 paragraphs – what a radial engine is / how it works -->
-  <p class="lead">
-    A radial engine is a type of internal combustion engine where multiple cylinders are arranged in a circle around a
-    central crankshaft. This design became iconic in early aviation—used in fighter aircraft, transport planes, and
-    trainers—because the circular cylinder layout delivered strong power, excellent air cooling, and outstanding
-    reliability in demanding environments.
-  </p>
+      <p class="lead">
+        A radial engine is a type of internal combustion engine where multiple cylinders are arranged in a circle around a
+        central crankshaft. This design became iconic in early aviation—used in fighter aircraft, transport planes, and
+        trainers—because the circular cylinder layout delivered strong power, excellent air cooling, and outstanding
+        reliability in demanding environments.
+      </p>
 
-  <p class="lead">
-    As the crankshaft rotates, the pistons fire in a precise sequence that produces smooth, continuous torque. The
-    connecting rods use a distinctive “master rod and link rod” system, allowing all cylinders to drive a single crank
-    pin while maintaining synchronized motion. This creates the signature rotating pattern that makes radial engines
-    both mechanically efficient and visually fascinating.
-  </p>
+      <p class="lead">
+        As the crankshaft rotates, the pistons fire in a precise sequence that produces smooth, continuous torque. The
+        connecting rods use a distinctive “master rod and link rod” system, allowing all cylinders to drive a single crank
+        pin while maintaining synchronized motion. This creates the signature rotating pattern that makes radial engines
+        both mechanically efficient and visually fascinating.
+      </p>
 
-  <p class="lead">
-    Although largely replaced by modern turbine engines, the radial engine remains a classic example of mechanical
-    ingenuity and multi-cylinder coordination. Its simple yet effective design continues to be used for education,
-    restoration projects, and engineering demonstrations.
-  </p>
+      <p class="lead">
+        Although largely replaced by modern turbine engines, the radial engine remains a classic example of mechanical
+        ingenuity and multi-cylinder coordination. Its simple yet effective design continues to be used for education,
+        restoration projects, and engineering demonstrations.
+      </p>
 
-  <!-- ONE main picture -->
-  <div class="hero-image-panel radial-overview-image">
-    <img src="radial-engine-hero.jpg" alt="Radial engine assembly render">
-  </div>
+      <!-- HERO IMAGE -->
+      <div class="hero-image-panel radial-overview-image">
+        <img src="radial-engine-hero.jpg" alt="Radial engine assembly render">
+      </div>
 
-  <!-- Your project summary -->
-  <p class="project-summary-title">
-    Multi-cylinder engine assembly modelled and animated in SolidWorks.
-  </p>
+      <p class="project-summary-title">
+        Multi-cylinder engine assembly modelled and animated in SolidWorks.
+      </p>
 
-  <p class="lead">
-    This radial engine project focuses on building a complete multi-cylinder assembly, applying correct mates and then
-    driving a motion study to visualise piston and crank kinematics. It is designed and modelled entirely in SolidWorks.
-  </p>
+      <p class="lead">
+        This radial engine project focuses on building a complete multi-cylinder assembly, applying correct mates and then
+        driving a motion study to visualise piston and crank kinematics. It is designed and modelled entirely in SolidWorks.
+      </p>
 
-  <ul class="project-meta">
-    <li><strong>Tool:</strong> SolidWorks</li>
-    <li><strong>Type:</strong> Assembly &amp; Motion Study</li>
-    <li><strong>Role:</strong> Individual project</li>
-    <li><strong>Focus:</strong> Mechanisms, mates, motion visualisation</li>
-  </ul>
-</section>
+      <ul class="project-meta">
+        <li><strong>Tool:</strong> SolidWorks</li>
+        <li><strong>Type:</strong> Assembly &amp; Motion Study</li>
+        <li><strong>Role:</strong> Individual project</li>
+        <li><strong>Focus:</strong> Mechanisms, mates, motion visualisation</li>
+      </ul>
+    </section>
 
-    <!-- Later we will add: gallery, motion, process, skills, etc. -->
-
-        <!-- SECTION 2 – VISUAL GALLERY -->
+    <!-- GALLERY -->
     <section class="section radial-gallery">
       <h2>Assembly Views &amp; Technical Representation</h2>
       <div class="divider"></div>
+
       <p class="lead">
         Different visualisations of the radial engine assembly, including exploded structure,
         internal details and an engineering drawing sheet prepared in SolidWorks.
@@ -107,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-frame">
             <img src="radial-exploded.png" alt="Exploded view of radial engine assembly">
           </div>
-          <figcaption>
+          <figcaption class="motion-caption">
             <strong>Exploded Assembly View</strong><br>
             Shows the full breakdown of cylinders, pistons, rings, wrist pins, connecting rods and
             crankshaft to communicate how components relate in the assembly.
@@ -119,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-frame">
             <img src="radial-detail.png" alt="Detail view of piston, rings and connecting rod in radial engine">
           </div>
-          <figcaption>
+          <figcaption class="motion-caption">
             <strong>Detail – Piston &amp; Connecting Rod</strong><br>
             Close-up of piston, rings and small-end connection, highlighting clearances and surface
             transitions inside the cylinder.
@@ -131,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-frame">
             <img src="radial-drawing.png" alt="Radial engine drawing sheet with orthographic and section views">
           </div>
-          <figcaption>
+          <figcaption class="motion-caption">
             <strong>Technical Drawing Sheet</strong><br>
             A3 drawing with front and section views, key dimensions and hatching to represent the
             assembly in a manufacturing-style format.
@@ -140,39 +121,58 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </section>
 
+    <!-- MOTION -->
+    <section class="section radial-motion">
+      <h2>Assembly Motion – 360° Product View</h2>
+      <div class="divider"></div>
+
+      <div class="motion-frame medium">
+        <video
+          id="radialVideo"
+          src="radial-engine-animation.mp4"
+          muted
+          loop
+          playsinline
+          data-autoplay-on-visible
+        ></video>
+
+        <p class="motion-caption">
+          A full 360° rotation created in SolidWorks Motion Study to present the overall form,
+          symmetry, and component layout. This animation helps communicate the assembled structure
+          and makes the crank–cylinder relationship easier to read at a glance.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
       <span>© <span id="year"></span> Rohan Mali</span>
       <span>SolidWorks &amp; Design Projects Portfolio</span>
     </footer>
+
   </div>
 
+  <!-- Year + autoplay-on-visible -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const autoplayVideos = document.querySelectorAll('[data-autoplay-on-visible]');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const video = entry.target;
+          if (entry.isIntersecting) {
+            if (video.paused) video.play().catch(() => {});
+          } else {
+            if (!video.paused) video.pause();
+          }
+        });
+      }, { threshold: 0.45 });
+
+      autoplayVideos.forEach(v => observer.observe(v));
+    } else {
+      autoplayVideos.forEach(v => v.play().catch(() => {}));
+    }
   </script>
 </body>
 </html>
-    <!-- SECTION 3 – MOTION / ANIMATION -->
-<!-- MOTION STUDY SECTION (match Motor Blower style) -->
-<section class="section radial-motion">
-  <h2>Assembly Motion – 360° Product View</h2>
-  <div class="divider"></div>
-
-  <div class="motion-frame medium">
-    <video
-      src="radial-engine-animation.mp4"
-      autoplay
-      muted
-      loop
-      playsinline>
-    </video>
-
-    <p class="motion-caption">
-      A full 360° rotation created in SolidWorks Motion Study to present the overall form,
-      symmetry, and component layout. This animation helps communicate the assembled structure
-      and makes the crank–cylinder relationship easier to read at a glance.
-    </p>
-  </div>
-</section>
-
-
-
