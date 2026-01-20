@@ -1,0 +1,169 @@
+<!-- =========================
+     FEED CHECK VALVE ASSEMBLY
+     File: feed-check-valve.html
+========================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feed Check Valve Assembly | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HEADER (same as other project pages) -->
+    <header>
+      <div class="logo">ROHAN MALI</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="assemblies.html">Assemblies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- OVERVIEW (centered flow like your other projects) -->
+    <section class="section bench-overview">
+      <span class="badge">
+        <span class="badge-dot"></span>
+        SolidWorks Assembly &amp; Motion Study
+      </span>
+
+      <h1>Feed Check Valve Assembly</h1>
+
+      <p class="lead">
+        A feed check valve is a control component used in piping systems to allow flow in one direction and prevent
+        reverse flow. In real applications, it protects pumps and boilers from backflow and helps maintain stable
+        pressure in feed lines by ensuring fluid moves only in the intended direction.
+      </p>
+
+      <p class="lead">
+        Inside the valve, a disc and seat form the sealing interface. When upstream pressure rises, the disc lifts to
+        open the flow path. If pressure drops or flow tries to reverse, the disc returns onto the seat to shut the
+        passage. This simple “open with pressure / close with backflow” behaviour makes check valves essential for
+        safe, reliable operation in industrial water and steam systems.
+      </p>
+
+      <p class="lead">
+        This SolidWorks assembly focuses on accurate component structure and clear mechanical communication:
+        flange interfaces, internal disc movement, and the relationship between the actuator/handwheel and the valve
+        internals. The section and exploded views are used to show how the valve is assembled and how the internal
+        parts support controlled flow and sealing.
+      </p>
+
+      <!-- HERO IMAGE -->
+      <div class="hero-image-panel bench-overview-image">
+        <img src="feed-check-valve-hero.jpg" alt="Feed check valve assembly render (assembled view)">
+      </div>
+
+      <!-- PROJECT SUMMARY -->
+      <p class="project-summary-title">
+        Industrial valve assembly modelled and visualised in SolidWorks with section, exploded and motion study views.
+      </p>
+
+      <p class="lead">
+        This project demonstrates assembly organisation, mate strategy and motion setup to represent valve opening and
+        closing behaviour. The outputs focus on clear presentation: a hero render, an exploded structure for assembly
+        logic, a section view for internal understanding, and a motion study for functional validation.
+      </p>
+
+      <ul class="project-meta">
+        <li><strong>Tool:</strong> SolidWorks</li>
+        <li><strong>Type:</strong> Assembly modelling, section view, exploded view &amp; motion study</li>
+        <li><strong>Role:</strong> Individual project</li>
+        <li><strong>Focus:</strong> Assembly structure, internal mechanism visibility, motion validation</li>
+      </ul>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section bench-gallery">
+      <h2>Assembly Views &amp; Internal Representation</h2>
+      <div class="divider"></div>
+
+      <div class="gallery-grid">
+
+        <!-- Exploded view -->
+        <article class="gallery-item">
+          <div class="gallery-frame">
+            <img src="feed-check-valve-exploded.png" alt="Exploded view of feed check valve assembly">
+          </div>
+          <p class="motion-caption">
+            <strong>Figure 1 – Exploded assembly structure.</strong>
+            This exploded view communicates the assembly order and how key parts locate: the main body, flange interface,
+            bonnet region, stem/actuation components, and fasteners. It allows a quick check of part relationships,
+            alignment and serviceability.
+          </p>
+        </article>
+
+        <!-- Section view -->
+        <article class="gallery-item">
+          <div class="gallery-frame">
+            <img src="feed-check-valve-section.png" alt="Section view of feed check valve showing internal disc and flow path">
+          </div>
+          <p class="motion-caption">
+            <strong>Figure 2 – Section view (internal mechanism).</strong>
+            The section cut reveals the disc/seat interface and the internal flow path through the valve body.
+            It highlights the sealing surfaces and the travel direction of the disc during opening and closing,
+            which is critical to understanding real check-valve behaviour.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MOTION STUDY -->
+    <section class="section bench-motion">
+      <h2>Motion Study – Disc Open / Close</h2>
+      <div class="divider"></div>
+
+      <div class="motion-frame medium">
+        <video
+          src="feed-check-valve-motion.mp4"
+          muted
+          loop
+          playsinline
+          data-autoplay-on-visible
+        ></video>
+
+        <p class="motion-caption">
+          The motion study drives the internal disc through its operating travel to visualise opening and closing.
+          This animation is used to validate movement limits, check for interference inside the body, and clearly show
+          how the valve prevents reverse flow in a real piping system.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>&copy; Rohan Mali &mdash; SolidWorks Assemblies &amp; Motion Studies</span>
+      <span>Feed Check Valve Assembly | Portfolio</span>
+    </footer>
+
+  </div>
+
+  <!-- Autoplay video only when visible (same behaviour as your other projects) -->
+  <script>
+    const autoplayVideos = document.querySelectorAll('[data-autoplay-on-visible]');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const video = entry.target;
+          if (entry.isIntersecting) {
+            if (video.paused) video.play().catch(() => {});
+          } else {
+            if (!video.paused) video.pause();
+          }
+        });
+      }, { threshold: 0.4 });
+
+      autoplayVideos.forEach(v => observer.observe(v));
+    } else {
+      autoplayVideos.forEach(v => v.play().catch(() => {}));
+    }
+  </script>
+
+</body>
+</html>
