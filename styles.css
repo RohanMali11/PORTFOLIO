@@ -471,4 +471,46 @@ footer{
     height: 200px;
   }
 }
+/* ========================= */
+/* FIX: COMPACT ASSEMBLIES GRID (Projects page only) */
+/* ========================= */
+
+#compact-assemblies .grid.three{
+  display: grid;
+  gap: 22px;
+}
+
+/* Make it 3 columns on desktop */
+@media (min-width: 900px){
+  #compact-assemblies .grid.three{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* 2 columns on medium screens */
+@media (min-width: 640px) and (max-width: 899px){
+  #compact-assemblies .grid.three{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Keep cards clean */
+#compact-assemblies .compact-card .title{
+  margin-top: 6px;
+}
+
+/* FIX: stop ugly cropping for technical renders */
+#compact-assemblies .compact-media img{
+  height: 180px;         /* smaller + cleaner */
+  object-fit: contain;   /* shows full model (no crop) */
+  background: #F5F5F5;   /* looks intentional inside frame */
+}
+
+/* Slightly smaller on phones */
+@media (max-width: 480px){
+  #compact-assemblies .compact-media img{
+    height: 160px;
+  }
+}
+
 
