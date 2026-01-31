@@ -860,20 +860,24 @@ footer{
 
 .home-intro{
   display: grid;
-  grid-template-columns: 86px 1fr;
-  gap: 18px;
-  align-items: start;
-  margin-top: 10px;
+  grid-template-columns: 120px 1fr; /* matches new image size */
+  gap: 20px;
+  align-items: flex-start;
 }
 
+/* =========================
+   HOME PAGE — portrait (clean circular)
+========================= */
 .home-portrait{
-  width: 86px;
-  height: 86px;
+  width: 110px;          /* increased from ~86px */
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(255,255,255,0.9);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+  border: 2px solid rgba(255,255,255,0.95);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
   background: #fff;
+}
+
 }
 
 @media (max-width: 600px){
