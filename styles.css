@@ -815,6 +815,10 @@ footer{
   object-fit: cover;
   border: 1px solid #CDCBD6;
 }
+.hero-actions{
+  margin-top:16px;
+}
+
 
 
 
