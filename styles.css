@@ -860,35 +860,35 @@ footer{
 
 .home-intro{
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 28px;
+  grid-template-columns: 320px 1fr;
+  gap: 36px;
   align-items: center;
 }
 
-
 /* =========================
-   HOME PAGE — MAIN PORTRAIT (2x size)
+   HOME PAGE — MAIN PORTRAIT (3x size)
 ========================= */
 .home-portrait{
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(255,255,255,0.95);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
-  background: #fff;
+  border: 4px solid rgba(255,255,255,0.95);
+  box-shadow: 0 22px 55px rgba(0,0,0,0.30);
+  background: #ffffff;
 }
-
 @media (max-width: 600px){
   .home-portrait{
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
   }
-  .home-portrait{
-    width: 92px;
-    height: 92px;
+
+  .home-intro{
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
+
 
 
 
