@@ -815,6 +815,37 @@ footer{
   object-fit: cover;
   border: 1px solid #CDCBD6;
 }
+/* =========================
+   HOME INTRO (Photo + Text)
+========================= */
+.home-hero{
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.intro-header{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.intro-photo{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 600px){
+  .intro-header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .hero-actions{
   margin-top:16px;
 }
