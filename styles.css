@@ -849,6 +849,42 @@ footer{
 .hero-actions{
   margin-top:16px;
 }
+/* =========================
+   HOME PAGE — portrait (small & circular)
+========================= */
+.home-hero{
+  max-width: var(--project);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-intro{
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.home-portrait{
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.9);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+  background: #fff;
+}
+
+@media (max-width: 600px){
+  .home-intro{
+    grid-template-columns: 1fr;
+  }
+  .home-portrait{
+    width: 92px;
+    height: 92px;
+  }
+}
 
 
 
