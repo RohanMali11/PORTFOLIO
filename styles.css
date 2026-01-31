@@ -801,6 +801,21 @@ footer{
   object-fit: cover;
   display: block;
 }
+/* Header name + photo */
+.logo.with-photo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo.with-photo img{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #CDCBD6;
+}
+
 
 
 
