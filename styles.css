@@ -888,6 +888,16 @@ footer{
     gap: 24px;
   }
 }
+/* FIX: links were using accent color (same as background) */
+.card a{
+  color:#2F3020;
+  font-weight:600;
+}
+
+.card a:hover{
+  color:#000000;
+  text-decoration:underline;
+}
 
 
 
