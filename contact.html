@@ -1,55 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Contact | Rohan Mali</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>Contact | Rohan Mali</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
-<header>
-  <div class="logo with-photo">
-    <img src="rohan-portrait.jpg" alt="Rohan Mali">
-    <span>ROHAN MALI</span>
-  </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <!-- HEADER -->
+    <header>
+      <div class="logo with-photo">
+        <img src="rohan-portrait.jpg" alt="Rohan Mali">
+        <span>ROHAN MALI</span>
+      </div>
 
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
+    <!-- CONTACT -->
     <section class="section">
       <h2>Get in touch</h2>
       <div class="divider"></div>
+
       <div class="grid two">
-        <div class="card">
-          <div class="header"><div class="title">Email</div><div class="meta">Preferred</div></div>
-          <div class="body"><a href="mailto:rohanmali6124@gmail.com">rohanmali6124@gmail.com</a></div>
-        </div>
-        <div class="card">
-          <div class="header"><div class="title">Phone</div><div class="meta">UK</div></div>
-          <div class="body"><a href="tel:+447867247231">+44 7867 247231</a></div>
-        </div>
-        <div class="card">
-          <div class="header"><div class="title">LinkedIn</div><div class="meta">Profile</div></div>
-          <div class="body"><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/rohan-mali-68b317246/">linkedin.com/in/rohan-mali-68b317246</a></div>
-        </div>
-        <div class="card">
-          <div class="header"><div class="title">Download PDF Portfolio</div><div class="meta">Original</div></div>
-          <div class="body"><a href="../PORTFOLIO - ROHAN.pdf" download>Click to download</a></div>
-        </div>
+
+        <!-- Email -->
+        <article class="card">
+          <div class="title">Email</div>
+          <div class="meta">Preferred</div>
+          <div class="body" style="margin-top:10px;">
+            <a href="mailto:rohanmali6124@gmail.com">rohanmali6124@gmail.com</a>
+          </div>
+        </article>
+
+        <!-- Phone -->
+        <article class="card">
+          <div class="title">Phone</div>
+          <div class="meta">UK</div>
+          <div class="body" style="margin-top:10px;">
+            <a href="tel:+447867247231">+44 7867 247231</a>
+          </div>
+        </article>
+
+        <!-- LinkedIn -->
+        <article class="card">
+          <div class="title">LinkedIn</div>
+          <div class="meta">Profile</div>
+          <div class="body" style="margin-top:10px;">
+            <a target="_blank" rel="noreferrer"
+               href="https://www.linkedin.com/in/rohan-mali-68b317246/">
+              linkedin.com/in/rohan-mali-68b317246
+            </a>
+          </div>
+        </article>
+
+        <!-- Location (optional but looks good) -->
+        <article class="card">
+          <div class="title">Location</div>
+          <div class="meta">Based in</div>
+          <div class="body" style="margin-top:10px;">
+            United Kingdom
+          </div>
+        </article>
+
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <span>© <span id="year"></span> Rohan Mali</span>
-      <span>SolidWorks & Design Projects Portfolio</span>
+      <span>Mechanical Design Portfolio</span>
     </footer>
+
   </div>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
