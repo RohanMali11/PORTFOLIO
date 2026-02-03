@@ -232,12 +232,14 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-      <span>&copy; Rohan Mali — SolidWorks Assemblies &amp; Motion Studies</span>
-      <span>Projects | Portfolio</span>
-    </footer>
+  <span>© <span id="year"></span> Rohan Mali. All rights reserved.</span>
+  <span>Mechanical Design Portfolio</span>
+</footer>
 
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
   </div>
 </body>
 </html>
