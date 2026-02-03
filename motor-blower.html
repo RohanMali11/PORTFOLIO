@@ -152,12 +152,14 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <span>© Rohan Mali — SolidWorks Assemblies &amp; Motion Studies</span>
-      <span>Motor Blower Assembly | Portfolio</span>
-    </footer>
+  <footer>
+  <span>© <span id="year"></span> Rohan Mali. All rights reserved.</span>
+  <span>Mechanical Design Portfolio</span>
+</footer>
 
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
   </div>
 </body>
 </html>
