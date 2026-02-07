@@ -681,4 +681,37 @@ footer{
     height: 220px;
   }
 }
+/* =========================
+   PROJECT ARROW (CTA)
+========================= */
+.project-arrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-top:12px;
+
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+
+  color:#CF5C36;          /* matches your orange background */
+  text-decoration:none;
+}
+
+.project-arrow svg{
+  width:26px;
+  height:26px;
+  stroke:#CF5C36;
+  stroke-width:2;
+  fill:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  transition:transform .25s ease;
+}
+
+.project-card:hover .project-arrow svg{
+  transform:translateX(6px);
+}
+
 
