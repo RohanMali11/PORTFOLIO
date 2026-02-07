@@ -713,5 +713,49 @@ footer{
 .project-card:hover .project-arrow svg{
   transform:translateX(6px);
 }
+/* =========================
+   PROJECT ARROW — WHITE CARD SAFE
+========================= */
+.project-arrow{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+
+  color: #CF5C36;              /* brand orange */
+  text-decoration: none;
+}
+
+.project-arrow svg{
+  width: 24px;
+  height: 24px;
+
+  stroke: #CF5C36;
+  stroke-width: 2;
+  fill: none;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  transition: transform .25s ease;
+}
+
+/* Arrow motion on hover */
+.project-card:hover .project-arrow svg{
+  transform: translateX(6px);
+}
+
+/* Safety: ensure arrow NEVER fades */
+.project-arrow,
+.project-arrow svg{
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 
 
